@@ -52,6 +52,7 @@ gem 'github_api'
 
 # Assets
 gem 'slim-rails'
+gem 'bootstrap-material-design'
 
 group :development do
   gem 'better_errors'
