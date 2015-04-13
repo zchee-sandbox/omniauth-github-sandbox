@@ -27,7 +27,7 @@ gem 'turbolinks'
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use Unicorn as the app server
-gem 'unicorn'
+gem 'unicorn-rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -53,13 +53,17 @@ gem 'github_api'
 
 # Assets
 gem 'slim-rails'
+gem 'bootstrap-sass'
 gem 'bootstrap-material-design'
+gem 'devise-bootstrap-views'
 
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', '>= 0.7.3.pre1'
   gem 'debase', '>= 0.1.3.beta1'
   gem 'dotenv-rails'
+  gem 'erb2haml'
+  gem 'html2slim'
   gem 'pry-rails'
   gem 'rack-mini-profiler'
   gem 'rails-footnotes'
