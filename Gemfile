@@ -48,6 +48,7 @@ end
 gem 'devise'
 gem 'omniauth'
 gem 'omniauth-github'
+gem 'omniauth-twitter'
 gem 'octokit'
 gem 'github_api'
 
