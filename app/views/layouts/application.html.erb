@@ -4,6 +4,7 @@
   <title>OmniauthGithubSandbox</title>
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -17,10 +18,10 @@
         deviseにより自動で作成されてますので、rake routesで確認できます -->
       Logged in as <strong><%= current_user.email %></strong>.
       <%= link_to 'Change profile', edit_user_registration_path %> |
-      <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+      <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
     <% else %>
-      <%= link_to "Sign Up", new_user_registration_path %> |
-      <%= link_to "Login", new_user_session_path %>
+      <%= link_to 'Sign Up', new_user_registration_path %> |
+      <%= link_to 'Login', new_user_session_path %>
       <%= link_to 'Sign in with Twitter', user_omniauth_authorize_path(:twitter) %>
     <% end %>
   </nav>

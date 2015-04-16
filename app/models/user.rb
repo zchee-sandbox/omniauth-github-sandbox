@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable, :omniauthable, omniauth_providers: [:twitter]
 
-  validates :uid, presence: true, uniqueness: true
+  validates :name, presence: true, uniqueness: true
 
 
   def self.from_omniauth(auth)
@@ -33,6 +33,10 @@ class User < ActiveRecord::Base
     end
   end
 
+
+  def email_required?
+    super && provider.blank?
+  end
 
   def password_required?
     super && provider.blank?
