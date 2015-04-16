@@ -58,6 +58,10 @@ gem 'bootstrap-sass'
 gem 'bootstrap-material-design'
 gem 'devise-bootstrap-views'
 
+# Javascripts
+gem 'spinjs-rails'
+gem 'nprogress-rails'
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', '>= 0.7.3.pre1'

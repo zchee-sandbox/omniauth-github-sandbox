@@ -14,5 +14,18 @@
 //= require_self
 //= require bootstrap-material-design
 //= require devise_bootstrap_views
+// require nprogress
+// require nprogress-bootstrap
 
 @import 'bootstrap';
+
+$nprogress-color: #49A9F5;
+$nprogress-height: 5px;
+$nprogress-zindex: 10100;
+#nprogress .spinner {
+  right: 0;
+  left: 15px;
+}
+
+@import 'nprogress';
+@import 'nprogress-bootstrap';
