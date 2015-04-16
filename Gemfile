@@ -70,6 +70,9 @@ group :development do
   gem 'rails-footnotes'
   gem 'rubocop', require: false
   gem 'ruby-debug-ide'
+  gem 'quiet_assets'
+  gem 'meta_request'
+  gem 'activerecord-cause'
 end
 
 group :development, :test do
